@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import com.example.messeger.databinding.ActivityMainBinding;
 
+import com.example.messeger.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;

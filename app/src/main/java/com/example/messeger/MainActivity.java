@@ -1,18 +1,22 @@
 package com.example.messeger;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.os.Bundle;
-import android.widget.TextView;
+
+import com.example.messeger.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    public TextView textView;
-    public ActivityMainBinding binding;
+    private ActivityMainBinding binding;
+    public NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        navController = Navigation.findNavController(this,R.id.navHostFragment);
     }
 }
